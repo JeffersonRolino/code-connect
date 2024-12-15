@@ -71,6 +71,11 @@ main {
     padding: 32px;
     display: flex;
     gap: 24px;
+    min-width: 996px;
+}
+
+.container-descricao {
+    width: 100%;
 }
 
 h2 {
