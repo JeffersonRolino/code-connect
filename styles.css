@@ -152,6 +152,12 @@ textarea {
     position: relative;
 }
 
+.botao-descartar:hover {
+    background-color: var(--primary-color);
+    color: var(--itens-background);
+    cursor: pointer;
+}
+
 .botao-descartar::after {
     content: "";
     background-image: url("./img/trash.svg");
@@ -164,4 +170,33 @@ textarea {
     top: 50%;
     transform: translateY(-50%);
     margin-left: 8px;
+}
+
+.botao-publicar {
+    background-color: var(--primary-color);
+    color: var(--itens-background);
+    border: none;
+    position: relative;
+}
+
+.botao-publicar:hover {
+    background-color: var(--itens-background);
+    color: var(--primary-color);
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+}
+
+.botao-publicar::after {
+    content: "";
+    background-image: url("./img/arrow_forward2.svg");
+    color: var(--itens-background);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 36%;
+    transform: translate(-50%);
+    margin-left: 10px;
 }
