@@ -74,10 +74,6 @@ main {
     min-width: 996px;
 }
 
-.container-descricao {
-    width: 100%;
-}
-
 h2 {
     font-size: 26px;
     margin-bottom: 40px;
@@ -199,4 +195,63 @@ textarea {
     top: 36%;
     transform: translate(-50%);
     margin-left: 10px;
+}
+
+.container-descricao {
+    width: 422px;
+}
+
+.main-imagem {
+    border-radius: 8px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-imagem {
+    height: 368px;
+    padding: 24px 16px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+}
+
+.container-upload-imagem button {
+    margin: 16px 0 8px 0;
+    background-color: var(--itens-background);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+}
+
+.container-upload-imagem button:hover {
+    background-color: var(--primary-color);
+    color: var(--itens-background);
+    border: none;
+    cursor: pointer;
+}
+
+.container-upload-imagem button::after {
+    content: "";
+    background-image: url("./img/upload.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 8px;
+}
+
+.container-imagem-nome {
+    display: flex;
+    gap: 8px;
+    color: var(--secondary-color);
+    font-size: 15px;
 }
